@@ -16,7 +16,7 @@ class SimpleSalendroidTests(unittest.TestCase):
     def setUp(self):
          desired_caps = {'platformName': 'Android', 'platformVersion': '4.1', 'deviceName': 'Android Emulator', 'automationName': "selendroid", 'app': PATH(
             '../../../sample-code/apps/ApiDemos/bin/ApiDemos-debug.apk'
-        )
+        )}
 
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
