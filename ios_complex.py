@@ -6,9 +6,6 @@ import os
 import random
 import string
 from appium import webdriver
-from appium.webdriver.common.touch_action import TouchAction
-# from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.touch_actions import TouchActions
 # from selenium.webdriver.common.keys import Keys
 import urllib2
 import json
