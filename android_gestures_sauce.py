@@ -1,9 +1,8 @@
-from appium import webdriver
-from appium import SauceTestCase, on_platforms
-from appium.webdriver.common.touch_action import TouchAction
-from appium.webdriver.common.multi_action import MultiAction
-
 from time import sleep
+
+from appium import SauceTestCase, on_platforms
+from appium.webdriver.common.multi_action import MultiAction
+from appium.webdriver.common.touch_action import TouchAction
 
 app = "http://appium.github.io/appium/assets/ApiDemos-debug.apk"
 platforms = [{
