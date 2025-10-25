@@ -45,7 +45,7 @@ class WebViewIOSTests(unittest.TestCase):
         # allow the page to load
         sleep(1)
 
-        self.assertEquals('sauce labs - Google Search', self.driver.title)
+         self.assertEqual('sauce labs - Google Search', self.driver.title)
 
 
 if __name__ == '__main__':
