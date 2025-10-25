@@ -70,7 +70,7 @@ class ComplexAndroidTests(unittest.TestCase):
             el = self.driver.find_element_by_accessibility_id('Touch Paint')
         except Exception as e:
             els = self.driver.find_elements_by_class_name('android.widget.TextView')
-            self.driver.scroll(els[len(els)-1], els[0])
+            self.driver.scroll(els[-1], els[0])
 
         if el is None:
             el = self.driver.find_element_by_accessibility_id('Touch Paint')
