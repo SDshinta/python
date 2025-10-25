@@ -1,7 +1,6 @@
 
 from appium import SauceTestCase, on_platforms
 
-
 app = "http://appium.s3.amazonaws.com/NotesList.apk"
 platforms = [{
                 "platformName": "Android",
