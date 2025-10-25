@@ -1,13 +1,14 @@
 """
 Simple iOS WebView tests.
 """
-import unittest
 import os
+import unittest
 from random import randint
-from appium import webdriver
 from time import sleep
 
+from appium import webdriver
 from selenium.webdriver.common.keys import Keys
+
 
 class WebViewIOSTests(unittest.TestCase):
 

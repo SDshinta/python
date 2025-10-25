@@ -1,7 +1,8 @@
 import os
-import pytest
 
 from appium import webdriver
+
+import pytest
 
 # Returns abs path relative to this file and not cwd
 PATH = lambda p: os.path.abspath(

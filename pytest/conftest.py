@@ -1,7 +1,9 @@
-import pytest
 import datetime
 import os
+
 from helpers import ensure_dir
+
+import pytest
 
 
 def pytest_configure(config):

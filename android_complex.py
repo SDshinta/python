@@ -1,11 +1,10 @@
 import os
 import unittest
+from time import sleep
 
 from appium import webdriver
-from appium.webdriver.common.touch_action import TouchAction
 from appium.webdriver.common.multi_action import MultiAction
-
-from time import sleep
+from appium.webdriver.common.touch_action import TouchAction
 
 # Returns abs path relative to this file and not cwd
 PATH = lambda p: os.path.abspath(

@@ -19,7 +19,9 @@ under the License.
 """
 
 import unittest
+
 from appium import webdriver
+
 
 class SimpleCalculatorTests(unittest.TestCase):
 
