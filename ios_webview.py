@@ -3,7 +3,6 @@ Simple iOS WebView tests.
 """
 import unittest
 import os
-from random import randint
 from appium import webdriver
 from time import sleep
 
