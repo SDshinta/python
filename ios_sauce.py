@@ -7,7 +7,6 @@ from random import randint
 
 from appium import SauceTestCase, on_platforms
 
-
 platforms = [{
                 'platformName': 'iOS',
                 'platformVersion': '7.1',
