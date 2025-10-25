@@ -14,12 +14,7 @@ THINK_TIME = 5.
 
 class SimpleSalendroidTests(unittest.TestCase):
     def setUp(self):
-        desired_caps = {}
-        desired_caps['platformName'] = 'Android'
-        desired_caps['platformVersion'] = '4.1'
-        desired_caps['deviceName'] = 'Android Emulator'
-        desired_caps['automationName'] = "selendroid"
-        desired_caps['app'] = PATH(
+         desired_caps = {'platformName': 'Android', 'platformVersion': '4.1', 'deviceName': 'Android Emulator', 'automationName': "selendroid", 'app': PATH(
             '../../../sample-code/apps/ApiDemos/bin/ApiDemos-debug.apk'
         )
 
