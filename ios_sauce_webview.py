@@ -2,9 +2,9 @@
 
 This test assumes SAUCE_USERNAME and SAUCE_ACCESS_KEY are environment variables
 set to your Sauce Labs username and access key."""
-from appium import SauceTestCase, on_platforms
 from time import sleep
 
+from appium import SauceTestCase, on_platforms
 from selenium.webdriver.common.keys import Keys
 
 app = 'http://appium.s3.amazonaws.com/WebViewApp6.0.app.zip'
