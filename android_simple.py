@@ -12,13 +12,9 @@ PATH = lambda p: os.path.abspath(
 
 class SimpleAndroidTests(unittest.TestCase):
     def setUp(self):
-        desired_caps = {}
-        desired_caps['platformName'] = 'Android'
-        desired_caps['platformVersion'] = '4.2'
-        desired_caps['deviceName'] = 'Android Emulator'
-        desired_caps['app'] = PATH(
+        desired_caps = {'platformName': 'Android', 'platformVersion': '4.2', 'deviceName': 'Android Emulator', 'app': PATH(
             '../../../sample-code/apps/ApiDemos/bin/ApiDemos-debug.apk'
-        )
+        )}
 
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
