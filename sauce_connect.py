@@ -14,18 +14,18 @@ things that you would normally do in a different way:
   like to connect to your own webserver
 """
 
-import unittest
-from selenium import webdriver
 import os
+import select
 import subprocess
 import sys
-import select
-from SimpleHTTPServer import SimpleHTTPRequestHandler
-from StringIO import StringIO
+import unittest
 from threading import Thread
-from BaseHTTPServer import HTTPServer
-from SocketServer import ThreadingMixIn
 
+from BaseHTTPServer import HTTPServer
+from selenium import webdriver
+from SimpleHTTPServer import SimpleHTTPRequestHandler
+from SocketServer import ThreadingMixIn
+from StringIO import StringIO
 
 SAUCE_USERNAME = os.environ.get('SAUCE_USERNAME')
 SAUCE_ACCESS_KEY = os.environ.get('SAUCE_ACCESS_KEY')

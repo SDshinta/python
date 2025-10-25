@@ -1,18 +1,20 @@
 """
 More involved iOS tests, using UICatalog application.
 """
-import unittest
+import json
 import os
 import random
 import string
+import unittest
+from time import sleep
+
+# from selenium.webdriver.common.keys import Keys
+import urllib2
 from appium import webdriver
 from appium.webdriver.common.touch_action import TouchAction
 # from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.touch_actions import TouchActions
-# from selenium.webdriver.common.keys import Keys
-import urllib2
-import json
-from time import sleep
+
 
 def str_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))

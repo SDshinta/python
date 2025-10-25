@@ -1,8 +1,9 @@
 import os
-import pytest
 
 from appium import webdriver
 from helpers import take_screenhot_and_logcat
+
+import pytest
 
 # Returns abs path relative to this file and not cwd
 PATH = lambda p: os.path.abspath(

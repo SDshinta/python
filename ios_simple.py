@@ -1,11 +1,13 @@
 """
 Simple iOS tests, showing accessing elements and getting/setting text from them.
 """
-import unittest
 import os
+import unittest
 from random import randint
-from appium import webdriver
 from time import sleep
+
+from appium import webdriver
+
 
 class SimpleIOSTests(unittest.TestCase):
 

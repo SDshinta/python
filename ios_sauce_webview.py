@@ -4,10 +4,9 @@ This test assumes SAUCE_USERNAME and SAUCE_ACCESS_KEY are environment variables
 set to your Sauce Labs username and access key."""
 
 from random import randint
-from appium import webdriver
-from appium import SauceTestCase, on_platforms
 from time import sleep
 
+from appium import SauceTestCase, on_platforms, webdriver
 from selenium.webdriver.common.keys import Keys
 
 app = 'http://appium.s3.amazonaws.com/WebViewApp6.0.app.zip'
