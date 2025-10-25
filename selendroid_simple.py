@@ -31,11 +31,11 @@ class SimpleSalendroidTests(unittest.TestCase):
 
     def test_selendroid(self):
         el = self.driver.find_element_by_name("Animation")
-        # assert el.text == "Animation"
+
         self.assertEqual('Animation', el.text)
 
         el = self.driver.find_element_by_class_name("android.widget.TextView")
-        # assert el.text == "Accessibility"
+        
         self.assertEqual('Accessibility', el.text)
 
         el = self.driver.find_element_by_name("App")
