@@ -30,7 +30,8 @@ class TestWebViewAndroid():
         request.addfinalizer(fin)
         return driver  # provide the fixture value
 
-    def test_add_contacts(self, driver):
+     @staticmethod
+    def test_add_contacts(driver):
         el = driver.find_element_by_accessibility_id("Add Contact")
         el.click()
 
