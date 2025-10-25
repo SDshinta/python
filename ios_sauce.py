@@ -5,7 +5,7 @@ set to your Sauce Labs username and access key."""
 
 from random import randint
 
-from appium import SauceTestCase, on_platforms, webdriver
+from appium import SauceTestCase, on_platforms
 
 platforms = [{
                 'platformName': 'iOS',

@@ -8,7 +8,6 @@ import string
 import unittest
 from time import sleep
 
-# from selenium.webdriver.common.keys import Keys
 import urllib2
 from appium import webdriver
 from appium.webdriver.common.touch_action import TouchAction
