@@ -1,4 +1,4 @@
-from appium import webdriver
+
 from appium import SauceTestCase, on_platforms
 
 
