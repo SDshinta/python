@@ -25,10 +25,7 @@ class SimpleCalculatorTests(unittest.TestCase):
 
     def setUp(self):
         #set up appium
-        desired_caps = {}  
-        desired_caps["app"] = "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"
-        desired_caps["platformName"] = "Windows"
-        desired_caps["deviceName"] = "WindowsPC"
+        desired_caps = {"app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App", "platformName": "Windows", "deviceName": "WindowsPC"} 
         self.driver = webdriver.Remote(
             command_executor='http://127.0.0.1:4723/wd/hub',
             desired_capabilities= desired_caps)
