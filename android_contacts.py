@@ -1,5 +1,6 @@
 import os
 import unittest
+
 from appium import webdriver
 
 # Returns abs path relative to this file and not cwd
