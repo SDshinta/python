@@ -30,7 +30,8 @@ class TestSimpleAndroid():
         request.addfinalizer(fin)
         return driver  # provide the fixture value
 
-    def test_find_elements(self, driver):
+     @staticmethod
+    def test_find_elements(driver):
         el = driver.find_element_by_accessibility_id('Graphics')
         el.click()
         el = driver.find_element_by_accessibility_id('Arcs')
@@ -44,7 +45,9 @@ class TestSimpleAndroid():
         assert len(els) >= 12
         driver.find_element_by_android_uiautomator('text("API Demos")')
 
-    def test_simple_actions(self, driver):
+    @staticmethod
+    def test_simple_actions(driver):
+        
         el = driver.find_element_by_accessibility_id('Graphics')
         el.click()
 
