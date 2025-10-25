@@ -1,4 +1,4 @@
-from appium import webdriver
+
 from appium import SauceTestCase, on_platforms
 from appium.webdriver.common.touch_action import TouchAction
 from appium.webdriver.common.multi_action import MultiAction
