@@ -153,7 +153,7 @@ class ComplexIOSTests(unittest.TestCase):
         self.assertEqual(slider.get_attribute("value"), "0%")
 
     def test_sessions(self):
-        data = json.loads(urllib2.urlopen("http://localhost:4723/wd/hub/sessions").read())
+         data = json.load(urllib2.urlopen("http://localhost:4723/wd/hub/sessions"))
         self.assertEqual(self.driver.session_id, data['sessionId'])
 
     def test_size(self):
